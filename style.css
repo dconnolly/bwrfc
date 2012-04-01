@@ -6,5 +6,7 @@ Template:       roots
 Version:        0.1.0
 */
 
-@import url("../roots/style.css");
-@import url("cyborg/cyborg.css");
+@import url("css/bwrfc.css");
+
+
+
