@@ -19,7 +19,18 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
+  <script>
+   jQuery(function($) {
+    $('li.dropdown').hover(
+        function() {
+            $(this).toggleClass('open');
+        }
+    );
+   });
+
+  </script>
   <?php roots_head(); ?>
+  
   <?php wp_head(); ?>
 
 </head>
@@ -31,9 +42,9 @@
   <?php roots_header_before(); ?>
     <header id="banner" class="container" role="banner">
       <?php roots_header_inside(); ?>
-      <a href="/">
-        <h1 id="header-logo">Boston Women's Rugby</h1>
-      </a>
+      <h1 id="header-logo">
+        <a href="/">Boston Women's Rugby</a>
+      </h1>  
       <div class="navbar">
         <div class="navbar-inner">
           <div class="<?php echo WRAP_CLASSES; ?>">
