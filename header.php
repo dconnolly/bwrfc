@@ -27,10 +27,25 @@
         }
     );
    });
-
   </script>
-  <?php roots_head(); ?>
-  
+  <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/libs/slides.min.jquery.js"></script>
+  <script>
+    $(function(){
+      $("#slides").slides({
+            preload: true,
+            play: 5000,
+            slideSpeed: 800,
+            pagination: false,
+            effect: 'fade, slide',
+            crossfade: true,
+            generatePagination: false
+      });
+    });
+  </script>
+  <?php } ?>
+
+  <?php roots_head(); ?>  
   <?php wp_head(); ?>
 
 </head>
@@ -65,29 +80,28 @@
       
       <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
       <div id="slides">
-        <div class="slides_container" style="overflow-x: hidden; overflow-y: hidden; position: relative; display: block; ">
-          <div class="slides_control" style="position: relative; width: 1410px; height: 170px; left: -470px; ">
-            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; ">
-              
-              <h1>Support</h1>              
+        <div class="slides_container">
+            <div>
+              <img src="/assets/IMG_3924_960x300.jpg">
+              <h1><span>Support</span></h1>              
             </div>
-            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
-              <h1>Score</h1>
+            <div>
+              <img src="/assets/KimVarney-30_960x300.jpg">
+              <h1><span>Score</span></h1>
             </div>
-            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
-              <h1>Tackle</h1>
-              
+            <div>
+              <img src="/assets/KimVarney-1_960x300.jpg">
+              <h1><span>Tackle</span></h1>
             </div>
-            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
-              <h1>Win</h1>
-              
+            <div>
+              <img src="/assets/KimVarney-9_960x300.jpg">
+              <h1><span>Win</span></h1>
             </div>
-            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
-              <h1>Attack</h1>
-              
+            <div>
+              <img src="/assets/KimVarney-28_960x3001.jpg">
+              <h1><span>Attack</span></h1>
             </div>
           </div>
-          
         </div>
         <?php } else { ?>
         <div class="attachment-post-thumbnail">

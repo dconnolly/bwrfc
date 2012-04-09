@@ -3956,15 +3956,33 @@ h1 span {
    clear: right;
 }
 
-
 .slides_container {
-    width: 100%;
+    width: 960px;
+    height: 300px;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    display: block; 
+    padding-bottom: 18px;
 }
 .slides_container div {
-    width: 100%;
-    display:block;
+    width: 960px;
+    height: 300px;
+    display: block;
 }
-
+.slides_container div img {
+    width: 960px;
+    height: 300px;
+    padding-bottom: 18px;
+}
+.slides_container h1 {
+  position: absolute;
+  width: 960px;
+}
+.slides_container h1 span{
+    float: right;
+    clear: right;
+    bottom: 15%;
+}
 aside#sidebar {
   margin: 0 0 0 20px;
   float: right;
