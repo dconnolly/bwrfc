@@ -4,8 +4,25 @@
     <?php roots_main_before(); ?>
       <div id="main" class="<?php echo MAIN_CLASSES; ?>" role="main">
         <?php roots_loop_before(); ?>
-        <?php get_template_part('page', 'content'); ?>
-        <?php roots_loop_after(); ?>
+        <?php query_posts('showposts=3'); ?>
+        <?php while (have_posts()) : the_post(); ?>     
+        
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <?php roots_post_inside_before(); ?>
+          <header>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <?php roots_entry_meta(); ?>
+          </header>
+          <div class="entry-content">
+            <?php the_content(); ?>
+          </div>
+          <footer>
+            <?php $tags=get_the_tags(); if ($tags) {?><p><?php the_tags();?></p><?php }?>
+          </footer>
+        <?php roots_post_inside_after(); ?>
+        </article>        
+        <?php endwhile;?>
+      <?php roots_loop_after(); ?>
       </div><!-- /#main -->
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>
