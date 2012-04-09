@@ -6,5 +6,7 @@ require_once locate_template('/inc/bwrfc-scripts.php');     // modified scripts 
 
 ?>
 
-<?php add_theme_support( 'post-thumbnails' );
-?>
+<?php add_theme_support( 'post-thumbnails' ); ?>
+
+
+

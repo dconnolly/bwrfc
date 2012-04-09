@@ -63,14 +63,42 @@
         </div>
       </div>
       
-      <div class="attachment-post-thumbnail">
-        <?php if (has_post_thumbnail()) { ?>
-          <?php the_post_thumbnail(); ?>
-        <?php } else {?>
-          <img src="/assets/jerseys.jpg" class="attachment-post-thumbnail wp-post-image" alt="Boston Women's Rugby jerseys, 2011" title="BWRFC jerseys 2011">
-        <?php } ?>
-        <?php if (wp_title("", 0)) { ?>
-          <h1><span><?php wp_title("", true); ?></span></h1>
+      <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
+      <div id="slides">
+        <div class="slides_container" style="overflow-x: hidden; overflow-y: hidden; position: relative; display: block; ">
+          <div class="slides_control" style="position: relative; width: 1410px; height: 170px; left: -470px; ">
+            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; ">
+              
+              <h1>Support</h1>              
+            </div>
+            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
+              <h1>Score</h1>
+            </div>
+            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
+              <h1>Tackle</h1>
+              
+            </div>
+            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
+              <h1>Win</h1>
+              
+            </div>
+            <div style="position: absolute; top: 0px; left: 470px; z-index: 0; display: none; ">
+              <h1>Attack</h1>
+              
+            </div>
+          </div>
+          
+        </div>
+        <?php } else { ?>
+        <div class="attachment-post-thumbnail">
+          <?php if (has_post_thumbnail()) { ?>
+            <?php the_post_thumbnail(); ?>
+          <?php } else { ?>
+            <img src="/assets/jerseys.jpg" class="attachment-post-thumbnail wp-post-image" alt="Boston Women's Rugby jerseys, 2011" title="BWRFC jerseys 2011">
+          <?php } ?>
+          <?php if (wp_title("", 0)) { ?>
+            <h1><span><?php wp_title("", true); ?></span></h1>
+          <?php } ?>
         <?php } ?>
       </div>
     </header>
