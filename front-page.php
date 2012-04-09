@@ -5,8 +5,7 @@
       <div id="main" class="<?php echo MAIN_CLASSES; ?>" role="main">
         <?php roots_loop_before(); ?>
         <?php query_posts('showposts=3'); ?>
-        <?php while (have_posts()) : the_post(); ?>     
-        
+        <?php while (have_posts()) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <?php roots_post_inside_before(); ?>
           <header>

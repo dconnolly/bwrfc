@@ -2319,7 +2319,7 @@ nav > ul.nav > li q{
 .navbar {
   overflow: visible;
   margin-bottom: 18px;
-  margin-top: 12px;
+  margin-top: 5px;
 }
 .navbar-inner {
   padding-left: 0;
@@ -3990,4 +3990,8 @@ h1 span {
 div#support h1 span, div#tackle h1 span, div#attack h1 span {
   float: left;
   clear: left;
+}
+
+div.sidebar h5 {
+  font-size: 18px;
 }

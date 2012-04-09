@@ -59,7 +59,7 @@
       <?php roots_header_inside(); ?>
       <div class="top">
         <h1 id="header-logo">
-          <a href="/">Boston Women's Rugby</a>
+          <a href="/">Boston Women's Rugby</a> <small> est. 1976</small>
         </h1>  
         <div class="navbar">
           <div class="navbar-inner">
