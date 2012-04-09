@@ -3943,18 +3943,15 @@ img.attachment-post-thumbnail {
 .attachment-post-thumbnail h1 {
     position: absolute;
     bottom: 15%;
-    font-size: 37px;
+    /* font-size: 37px; */
     width: 100%;
 }
-
-h1 span {
-   color: white;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px 10px 3px 10px;
-   float: right;
-   clear: right;
+aside#sidebar {
+  margin: 0 0 0 20px;
+  float: right;
 }
+
+
 
 .slides_container {
     width: 960px;
@@ -3970,20 +3967,27 @@ h1 span {
     display: block;
 }
 .slides_container div img {
-    width: 960px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     padding-bottom: 18px;
 }
 .slides_container h1 {
   position: absolute;
-  width: 960px;
+  width: 100%;
+  z-index: 99;
+  bottom: 15%;
 }
-.slides_container h1 span{
-    float: right;
-    clear: right;
-    bottom: 15%;
+h1 span {
+   font-size: 42px;
+   color: white;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px 10px 3px 10px;
+   float: right;
+   clear: right;
 }
-aside#sidebar {
-  margin: 0 0 0 20px;
-  float: right;
+
+div#support h1 span, div#tackle h1 span, div#attack h1 span {
+  float: left;
+  clear: left;
 }

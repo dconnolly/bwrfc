@@ -37,7 +37,7 @@
             play: 5000,
             slideSpeed: 800,
             pagination: false,
-            effect: 'fade, slide',
+            effect: 'fade',
             crossfade: true,
             generatePagination: false
       });
@@ -81,23 +81,23 @@
       <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
       <div id="slides">
         <div class="slides_container">
-            <div>
+            <div id="support">
               <img src="/assets/IMG_3924_960x300.jpg">
               <h1><span>Support</span></h1>              
             </div>
-            <div>
+            <div id="score">
               <img src="/assets/KimVarney-30_960x300.jpg">
               <h1><span>Score</span></h1>
             </div>
-            <div>
+            <div id="tackle">
               <img src="/assets/KimVarney-1_960x300.jpg">
               <h1><span>Tackle</span></h1>
             </div>
-            <div>
+            <div id="win">
               <img src="/assets/KimVarney-9_960x300.jpg">
               <h1><span>Win</span></h1>
             </div>
-            <div>
+            <div id="attack">
               <img src="/assets/KimVarney-28_960x3001.jpg">
               <h1><span>Attack</span></h1>
             </div>
