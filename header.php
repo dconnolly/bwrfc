@@ -42,23 +42,36 @@
   <?php roots_header_before(); ?>
     <header id="banner" class="container" role="banner">
       <?php roots_header_inside(); ?>
-      <h1 id="header-logo">
-        <a href="/">Boston Women's Rugby</a>
-      </h1>  
-      <div class="navbar">
-        <div class="navbar-inner">
-          <div class="<?php echo WRAP_CLASSES; ?>">
-            <nav id="nav-main" class="nav-collapse" role="navigation">
-              <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Navbar_Nav_Walker())); ?>
-              <form role="search" method="get" id="searchform" class="navbar-search form-search pull-right" action="<?php echo home_url('/'); ?>">
-                <label class="visuallyhidden" for="s">
-                 <?php _e('Search for:', 'roots'); ?>
-                </label>
-                <input type="text" value="" name="s" id="s" class="search-query span2" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>">
-              </form>
-            </nav>
+      <div class="top">
+        <h1 id="header-logo">
+          <a href="/">Boston Women's Rugby</a>
+        </h1>  
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="<?php echo WRAP_CLASSES; ?>">
+              <nav id="nav-main" class="nav-collapse" role="navigation">
+                <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Navbar_Nav_Walker())); ?>
+                <form role="search" method="get" id="searchform" class="navbar-search form-search pull-right" action="<?php echo home_url('/'); ?>">
+                  <label class="visuallyhidden" for="s">
+                    <?php _e('Search for:', 'roots'); ?>
+                  </label>
+                  <input type="text" value="" name="s" id="s" class="search-query span2" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>">
+                </form>
+              </nav>
+            </div>
           </div>
         </div>
+      </div>
+      
+      <div class="attachment-post-thumbnail">
+        <?php if (has_post_thumbnail()) { ?>
+          <?php the_post_thumbnail(); ?>
+        <?php } else {?>
+          <img src="/assets/jerseys.jpg" class="attachment-post-thumbnail wp-post-image" alt="Boston Women's Rugby jerseys, 2011" title="BWRFC jerseys 2011">
+        <?php } ?>
+        <?php if (wp_title("", 0)) { ?>
+          <h1><span><?php wp_title("", true); ?></span></h1>
+        <?php } ?>
       </div>
     </header>
   <?php roots_header_after(); ?>

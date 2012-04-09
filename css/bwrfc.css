@@ -2454,7 +2454,7 @@ button.btn.small, input[type="submit"].btn.small {
 }
 .navbar-inner {
   padding-left: 0;
-  padding-right: 20px;
+  padding-right: 0px;
   background-color: #020202;
   background-image: -moz-linear-gradient(top, #020202, #020202);
   background-image: -ms-linear-gradient(top, #020202, #020202);
@@ -2603,6 +2603,7 @@ button.btn.small, input[type="submit"].btn.small {
   -ms-transition: none;
   -o-transition: none;
   transition: none;
+  width: 185px;
 }
 .navbar-search .search-query :-moz-placeholder {
   color: #eeeeee;
@@ -4146,3 +4147,29 @@ hr {
 header a {
   color: #EEE;
 }
+
+div.attachment-post-thumbnail {
+    position: relative;
+}
+
+img.attachment-post-thumbnail {
+    width: 100%;
+    padding-bottom: 18px;
+}
+
+.attachment-post-thumbnail h1 {
+    position: absolute;
+    bottom: 15%;
+    font-size: xx-large;
+    width: 100%;
+}
+
+h1 span {
+   color: white;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px 10px 3px 10px;
+   float: right;
+   clear: right;
+}
+
