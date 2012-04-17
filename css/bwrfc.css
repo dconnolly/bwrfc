@@ -182,7 +182,7 @@ a:hover {
   width: 860px;
 }
 .span12, .container {
-  width: 960px;
+  width: 940px;
 }
 .offset1 {
   margin-left: 100px;
@@ -272,7 +272,7 @@ a:hover {
   width: 99.99999998999999%;
 }
 .container {
-  width: 960px;
+  width: 940px;
   margin-left: auto;
   margin-right: auto;
   *zoom: 1;
@@ -2461,7 +2461,8 @@ nav > ul.nav > li q{
   color: #fff;
   color: rgba(255, 255, 255, 0.75);
   background: #666;
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3); */
+  background: rgba(0, 0, 0, 0.3);
   border: 1px solid #111;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
@@ -3447,7 +3448,7 @@ html {
 .navbar .search-query, .navbar .search-query:focus, .navbar .search-query.focused {
   color: #adafae;
   text-shadow: none;
-  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -3950,11 +3951,8 @@ aside#sidebar {
   margin: 0 0 0 20px;
   float: right;
 }
-
-
-
 .slides_container {
-    width: 960px;
+    width: 940px;
     height: 300px;
     overflow-x: hidden; 
     overflow-y: hidden; 
@@ -3962,7 +3960,7 @@ aside#sidebar {
     padding-bottom: 18px;
 }
 .slides_container div {
-    width: 960px;
+    width: 940px;
     height: 300px;
     display: block;
 }
@@ -3986,12 +3984,16 @@ h1 span {
    float: right;
    clear: right;
 }
-
 div#support h1 span, div#tackle h1 span, div#attack h1 span {
   float: left;
   clear: left;
 }
-
 div.sidebar h5 {
   font-size: 18px;
 }
+
+#content #main, #content aside {
+  background-color: rgba(0,0,0, 0.3);
+  padding: 2%;
+}
+

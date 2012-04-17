@@ -14,20 +14,10 @@
 
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 
-  <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.5.3.min.js"></script>
-
+  <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.0.6.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-  <script>
-   jQuery(function($) {
-    $('li.dropdown').hover(
-        function() {
-            $(this).toggleClass('open');
-        }
-    );
-   });
-  </script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/libs/slides.min.jquery.js"></script>
   <script>
@@ -59,11 +49,16 @@
       <?php roots_header_inside(); ?>
       <div class="top">
         <h1 id="header-logo">
-          <a href="/">Boston Women's Rugby</a> <small> est. 1976</small>
+          <a href="/"><?php bloginfo('name'); ?></a> <small> est. 1976</small>
         </h1>  
         <div class="navbar">
           <div class="navbar-inner">
             <div class="<?php echo WRAP_CLASSES; ?>">
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
               <nav id="nav-main" class="nav-collapse" role="navigation">
                 <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Navbar_Nav_Walker())); ?>
                 <form role="search" method="get" id="searchform" class="navbar-search form-search pull-right" action="<?php echo home_url('/'); ?>">
