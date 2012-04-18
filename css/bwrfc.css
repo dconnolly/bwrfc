@@ -3952,7 +3952,7 @@ aside#sidebar {
   float: right;
 }
 .slides_container {
-    width: 940px;
+    width: 100%;
     height: 300px;
     overflow-x: hidden; 
     overflow-y: hidden; 
@@ -3960,7 +3960,7 @@ aside#sidebar {
     padding-bottom: 18px;
 }
 .slides_container div {
-    width: 940px;
+    width: 940px;;
     height: 300px;
     display: block;
 }
@@ -3996,4 +3996,17 @@ div.sidebar h5 {
   background-color: rgba(0,0,0, 0.3);
   padding: 2%;
 }
-
+div.footer-sponsors {
+  height: 50px;
+  text-align: center;
+}
+#fenway-logo {
+  height: 100%;
+  margin: 0 5%;
+}
+#oneills-logo {
+  height: 35%;
+}
+#banshee-logo {
+  height: 50%;
+}
