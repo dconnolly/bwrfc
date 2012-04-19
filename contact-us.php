@@ -14,8 +14,11 @@ get_header(); ?>
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>
       <aside id="sidebar" class="<?php echo SIDEBAR_CLASSES; ?>" role="complementary">
-        <h2> Get in touch! </h2>
       <?php roots_sidebar_inside_before(); ?>
+        <div class="form-header">
+          <h1> Contact Us!</h1>
+        </div>
+        <div>
         <span class="hs-form-target">
           <script type="text/javascript">
             var ckTest = document.cookie.match ( '(^|;) ?hubspotutk=([^;]*)(;|$)' ),
@@ -39,6 +42,7 @@ get_header(); ?>
           </script>
         </span>
       <?php roots_sidebar_inside_after(); ?>
+      </div>
       </aside><!-- /#sidebar -->
     <?php roots_sidebar_after(); ?>
     </div><!-- /#content -->

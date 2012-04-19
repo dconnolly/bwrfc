@@ -113,7 +113,7 @@ body {
   min-width: 100%;
   background-size: 100% auto;
   padding-top: 0;
-  font: 62.5%/1.5 Arial, 'Helvetica', sans-serif;
+  font: 62.5%/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #CCCCCC;
@@ -2728,15 +2728,18 @@ nav > ul.nav > li q{
 .pager a {
   display: inline-block;
   padding: 0;
-  background-color: 0;
+  background-color: rgba(0,0,0,0);
   border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  font-size: medium;
+  color: #CCC;
 }
 .pager a:hover {
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: rgba(0,0,0,0);
+  border-bottom: 1px solid #C00;
 }
 .pager .next a {
   float: right;
@@ -3950,10 +3953,6 @@ img.attachment-post-thumbnail {
     /* font-size: 37px; */
     width: 100%;
 }
-aside#sidebar {
-  margin: 0 0 0 20px;
-  float: right;
-}
 #slides {
   padding-bottom: 18px;
 }
@@ -3982,9 +3981,33 @@ div#support h1 span, div#tackle h1 span, div#attack h1 span {
 div.sidebar h5 {
   font-size: 18px;
 }
-#content #main, #content aside {
-  background-color: rgba(0,0,0, 0.3);
+#content #main {
+  border-top: 3px solid #C00;
   padding: 2%;
+  width: 60%;
+}
+#content aside {
+  float: right;
+  width: 34%;
+  margin-left: 0;
+}
+#content aside > div {
+  border-bottom: 2px solid #C00;
+  padding: 5%;
+}
+#content aside > div:last-child {
+  border-bottom: 0;
+}
+#content #main, #content aside > * {
+  background-color: rgba(0,0,0, 0.3);
+}
+#content aside div.form-header {
+  padding-bottom: 0;
+  border-bottom: 2px solid #C00;
+  padding: 5% 5% 0;
+}
+body.home #content .latest-header {
+  display: inline-block;
 }
 footer#content-info {
   height: 50px;

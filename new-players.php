@@ -14,8 +14,12 @@ get_header(); ?>
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>
       <aside id="sidebar" class="<?php echo SIDEBAR_CLASSES; ?>" role="complementary">
-        <h1> Join Us! </h1>
       <?php roots_sidebar_inside_before(); ?>
+        <div class="form-header"> 
+          <h1> Join Us! </h1>
+        </div>
+      
+        <div>       
         <span class="hs-form-target">
           <script type="text/javascript">
             var ckTest = document.cookie.match ( '(^|;) ?hubspotutk=([^;]*)(;|$)' ),
@@ -38,6 +42,7 @@ get_header(); ?>
             hbspt.forms.initialize(hbspt.forms.context, '.hs-form-target');
           </script>
         </span>
+        </div>
       <?php roots_sidebar_inside_after(); ?>
       </aside><!-- /#sidebar -->
     <?php roots_sidebar_after(); ?>
