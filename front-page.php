@@ -21,7 +21,10 @@
         <?php roots_post_inside_after(); ?>
         </article>        
         <?php endwhile;?>
-      <?php roots_loop_after(); ?>
+        <?php roots_loop_after(); ?>
+        <nav id="post-nav" class="pager">
+          <a href="/club/news-and-events">More</a>
+        </nav>
       </div><!-- /#main -->
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>

@@ -1,14 +1,11 @@
-/*@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700');*/
-/* @import url("cyborg/cyborg.css"); */
 @import url('fonts/EuropaGroNr2SHOP-Ult.css');
 /*!
- * Bootstrap v2.0.1
+ * BWRFC Theme v1.0
+ * 
+ * Based on Roots theme and Cyborg styles, which are based on Bootstrap v2.0.1.
  *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * Designed and built by dconnolly (durumcrustulum at gmail dot com).
+ * Tracked at git@github.com:dconnolly/wp-themes.git
  */
 article,
 aside,
@@ -320,7 +317,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: EuropaGroNr2SHOP-Ult;
+  font-family: EuropaGroNr2SHOP-Ult, "Helvetica Neue", Helvetica, Arial;
   margin: 0;
   font-weight: bold;
   color: #282828;
@@ -2205,7 +2202,7 @@ nav > ul.nav > li q{
   font-size: 13px;
   color: #ADAFAE;
   text-transform: uppercase;
-  font-family: EuropaGroNr2SHOP-Ult;
+  font-family: EuropaGroNr2SHOP-Ult, "Helvetica Neue", Helvetica, Arial;
   text-rendering: optimizelegibility;
 }
 
@@ -2709,6 +2706,7 @@ nav > ul.nav > li q{
   text-align: right;
 }
 .pager {
+  font-family: EuropaGroNr2SHOP-Ult, "Helvetica Neue", Helvetica, Arial;
   margin-left: 0;
   margin-bottom: 18px;
   list-style: none;
@@ -4012,7 +4010,7 @@ body.home #content .latest-header {
 footer#content-info {
   height: 50px;
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 40px;
   vertical-align: middle; 
 }
 #fenway-logo {
@@ -4029,9 +4027,21 @@ footer h6{
   display: inline;
   vertical-align: text-bottom;
 }
-footer .photo-copy {
+footer .photo-credits {
   float: left;
 }
 footer .copy {
   float: right;
+}
+header div#follow-me{
+   position: absolute;
+   left: 80%;
+   top: 5%;
+}
+header div#follow-me img.icon {
+    width: 50px;
+}
+
+table.gadget iframe {
+    background-color: #DDD;
 }
