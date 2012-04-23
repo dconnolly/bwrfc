@@ -80,23 +80,23 @@
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <div id="slides">
       <div id="support" class="slide">
-        <img src="/assets/IMG_3924_960x300.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/IMG_3924_960x300.jpg">
         <h1><span>Support</span></h1>              
       </div>
       <div id="score" class="slide">
-        <img src="/assets/KimVarney-30_960x300.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-30_960x300.jpg">
         <h1><span>Score</span></h1>
       </div>
       <div id="tackle" class="slide">
-        <img src="/assets/KimVarney-1_960x300.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-1_960x300.jpg">
         <h1><span>Tackle</span></h1>
       </div>
       <div id="win" class="slide">
-        <img src="/assets/KimVarney-9_960x300.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-9_960x300.jpg">
         <h1><span>Win</span></h1>
       </div>
       <div id="attack" class="slide">
-        <img src="/assets/KimVarney-28_960x3001.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-28_960x3001.jpg">
         <h1><span>Attack</span></h1>
       </div>
   </div>
@@ -105,7 +105,7 @@
     <?php if (has_post_thumbnail()) { ?>
     <?php the_post_thumbnail(); ?>
     <?php } else { ?>
-    <img src="/assets/jerseys.jpg" class="attachment-post-thumbnail wp-post-image" alt="Boston Women's Rugby jerseys, 2011" title="BWRFC jerseys 2011">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jerseys.jpg" class="attachment-post-thumbnail wp-post-image" alt="Boston Women's Rugby jerseys, 2011" title="BWRFC jerseys 2011">
     <?php } ?>
     <?php if (wp_title("", 0)) { ?>
     <h1><span><?php wp_title("", true); ?></span></h1>
