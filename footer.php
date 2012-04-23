@@ -16,8 +16,8 @@
              <img id="banshee-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/banshee_logo.png" alt="The Banshee logo">
             </a>
       </div>
-      <h6 style="display: inline;">Photography by <a href="http://www.kimberlyvarney.com/">Kimberly Varney</a>.</h6>
-      <h6 class="copy" style="display: inline; float: right;">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></h6>
+      <h6 class="photo-credits">Photography by <a href="http://www.kimberlyvarney.com/">Kimberly Varney</a>.</h6>
+      <h6 class="copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></h6>
     </footer>
     <?php roots_footer_after(); ?>
 
