@@ -4045,3 +4045,15 @@ header div#follow-me img.icon {
 table.gadget iframe {
     background-color: #DDD;
 }
+.dl-horizontal dt {
+  float: left;
+  width: 45%;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-horizontal dd {
+  margin-left: 46%;
+}
