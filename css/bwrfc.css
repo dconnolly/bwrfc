@@ -3956,7 +3956,9 @@ img.attachment-post-thumbnail {
 }
 .slide, .slide img {
   width: 100%;
-  disaply: none;
+}
+div.slide {
+  display: none;
 }
 .slide h1 {
   position: absolute;
