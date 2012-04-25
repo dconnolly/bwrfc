@@ -3956,6 +3956,7 @@ img.attachment-post-thumbnail {
 }
 .slide, .slide img {
   width: 100%;
+  disaply: none;
 }
 .slide h1 {
   position: absolute;
@@ -4014,14 +4015,17 @@ footer#content-info {
   vertical-align: middle; 
 }
 #fenway-logo {
+  max-height: 50px;
   height: 100%;
   margin: 0 5%;
 }
 #oneills-logo {
   height: 35%;
+  max-height: 17px;
 }
 #banshee-logo {
   height: 50%;
+  max-height: 25px;
 }
 footer h6{
   display: inline;

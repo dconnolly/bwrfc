@@ -8,11 +8,11 @@
 
   <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
   <meta name="description" content="<?php if ( is_single() ) {
-        single_post_title('', true); 
+        single_post_title('', true);
     } else {
-        bloginfo('name'); echo " - "; bloginfo('description');
-    }
-    ?>" />
+        bloginfo('description');
+    }                                      
+    ?>" />   
 
   <meta name="viewport" content="width=device-width">
 
@@ -86,23 +86,23 @@
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <div id="slides">
       <div id="support" class="slide">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/IMG_3924_960x300.jpg">
+        <img alt="Support BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/IMG_3924_960x300.jpg">
         <h1><span>Support</span></h1>              
       </div>
       <div id="score" class="slide">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-30_960x300.jpg">
+        <img alt="Score BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-30_960x300.jpg">
         <h1><span>Score</span></h1>
       </div>
       <div id="tackle" class="slide">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-1_960x300.jpg">
+        <img alt="Tackle BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-1_960x300.jpg">
         <h1><span>Tackle</span></h1>
       </div>
       <div id="win" class="slide">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-9_960x300.jpg">
+        <img alt="Win BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-9_960x300.jpg">
         <h1><span>Win</span></h1>
       </div>
       <div id="attack" class="slide">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-28_960x3001.jpg">
+        <img alt="Attack BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-28_960x3001.jpg">
         <h1><span>Attack</span></h1>
       </div>
   </div>
