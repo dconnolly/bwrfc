@@ -7,6 +7,12 @@
   <meta charset="utf-8">
 
   <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+  <meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true); 
+    } else {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    }
+    ?>" />
 
   <meta name="viewport" content="width=device-width">
 
@@ -48,7 +54,7 @@
 
 <body <?php body_class(roots_body_class()); ?>>
 
-  <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <!--[if lt IE 9]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
   <?php roots_header_before(); ?>
   <header id="banner" class="container" role="banner">
