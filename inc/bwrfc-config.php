@@ -7,6 +7,6 @@ define('CONTAINER_CLASSES',    'row-fluid');
 define('MAIN_CLASSES',         'span7');
 define('SIDEBAR_CLASSES',      'span5');
 define('FULLWIDTH_CLASSES',    'span12');
-define('GOOGLE_ANALYTICS_ID',  '');
+define('GOOGLE_ANALYTICS_ID',  'UA-31191316-1');
 
 ?>
