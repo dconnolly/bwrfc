@@ -35,6 +35,9 @@
             navigation: false,
             pagination: false,
             startAtSlide: 5,
+            preload: {
+                       active: true
+            },
             effects: {
                        play: "fade"
             },
