@@ -1,9 +1,11 @@
 /*
 Theme Name:     BWRFC
+Theme URI:      http://github.com/dconnolly/bwrfc
+Description:    Boston Women's Rugby official site wordpress theme.
 Author:         Deirdre Connolly
-Author URI:     github.com/dconnolly
+Author URI:     http://github.com/dconnolly
 Template:       roots
-Version:        0.1.0
+Version:        1.1.0
 */
 
 @import url("css/bwrfc.css");
