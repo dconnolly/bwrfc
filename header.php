@@ -61,10 +61,10 @@
 
   <?php roots_header_before(); ?>
   <header id="banner" class="container" role="banner">
-    <?php roots_header_inside(); ?>  
+    <?php roots_header_inside(); ?> 
     <h1 id="header-logo">
-      <a href="/"><?php bloginfo('name'); ?></a> <small>est. 1976</small>
-    </h1>  
+      <a href="/" class="logo"><?php bloginfo('name'); ?> <small>est. 1976</small></a>
+    </h1>
     <div class="navbar">
       <div class="navbar-inner">
         <div class="<?php echo WRAP_CLASSES; ?>">

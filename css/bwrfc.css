@@ -4047,7 +4047,9 @@ header div#follow-me{
 header div#follow-me img.icon {
     width: 50px;
 }
-
+header a.logo {
+  text-decoration: none;
+}
 table.gadget iframe {
     background-color: #DDD;
 }
