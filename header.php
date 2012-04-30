@@ -87,7 +87,7 @@
     </div>
   </div>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
-  <div id="slides">
+  <div id="slides" class="primary-image">
       <div id="support" class="slide">
         <img alt="Support BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/IMG_3924_960x300.jpg">
         <h1><span>Support</span></h1>              
@@ -110,7 +110,7 @@
       </div>
   </div>
   <?php } else { ?>
-  <div class="attachment-post-thumbnail">
+  <div class="attachment-post-thumbnail primary-image">
     <?php if (has_post_thumbnail()) { ?>
     <?php the_post_thumbnail(); ?>
     <?php } else { ?>

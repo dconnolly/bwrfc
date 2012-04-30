@@ -2317,7 +2317,7 @@ nav > ul.nav > li q{
 }
 .navbar {
   overflow: visible;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   margin-top: 5px;
 }
 .navbar-inner {
@@ -3937,12 +3937,11 @@ header a {
 }
 
 div.attachment-post-thumbnail {
-    position: relative;
+  position: relative;
 }
 
 img.attachment-post-thumbnail {
-    width: 100%;
-    padding-bottom: 18px;
+  width: 100%;
 }
 
 .attachment-post-thumbnail h1 {
@@ -3951,8 +3950,8 @@ img.attachment-post-thumbnail {
     /* font-size: 37px; */
     width: 100%;
 }
-#slides {
-  padding-bottom: 18px;
+div.primary-image {
+  margin-bottom: 15px;
 }
 .slide, .slide img {
   width: 100%;
@@ -4051,7 +4050,7 @@ header a.logo {
   text-decoration: none;
 }
 table.gadget iframe {
-    background-color: #DDD;
+  background-color: #DDD;
 }
 .dl-horizontal dt {
   float: left;
