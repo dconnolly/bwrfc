@@ -23,7 +23,6 @@
   <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.0.6.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/libs/slides.js"></script>
   <script>
@@ -49,6 +48,7 @@
     
   </script>
   <?php } ?>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
 
   <?php roots_head(); ?>  
   <?php wp_head(); ?>
@@ -61,7 +61,21 @@
 
   <?php roots_header_before(); ?>
   <header id="banner" class="container" role="banner">
-    <?php roots_header_inside(); ?> 
+    <?php roots_header_inside(); ?>
+    <div id="follow-me">
+      <a href="http://www.facebook.com/bostonwomensrfc">
+        <img class="icon png grey" alt="Follow bostonwomensrfc on Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png">
+        <img class="icon png white" alt="Follow bostonwomensrfc on Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook_white.png">
+      </a>
+      <a href="http://www.twitter.com/bostonwomensrfc">
+        <img class="icon png grey" alt="Follow @bostonwomensrfc on Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.png">
+        <img class="icon png white" alt="Follow @bostonwomensrfc on Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter_white.png">
+      </a>
+      <a href="/feed">
+        <img class="icon png grey" alt="Follow us via rss" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rss.png">
+        <img class="icon png white" alt="Follow us via rss" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rss_white.png">
+      </a>
+    </div>
     <h1 id="header-logo">
       <a href="/" class="logo"><?php bloginfo('name'); ?> <small>est. 1976</small></a>
     </h1>

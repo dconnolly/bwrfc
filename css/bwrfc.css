@@ -4039,14 +4039,27 @@ footer .copy {
   float: right;
 }
 header div#follow-me{
-   position: absolute;
-   left: 80%;
-   top: 5%;
+   float: right;   
+   background-color: rgba(255, 255, 255, 0.1);
+   padding: 12px 8px 8px;
+}
+#follow-me img.white {
+  display: none;
+}
+#follow-me a:hover img.white {
+  display: inline-block;   
+}
+#follow-me a:hover img.grey {
+  display: none;   
 }
 header div#follow-me img.icon {
-    width: 50px;
+  width: 20px;
+  height: 20px;
 }
-header a.logo {
+/* .svg img.png, .no-svg img.svg { */
+/*   display: none!important; */
+/* } */
+header a.logo, #follow-me a {
   text-decoration: none;
 }
 table.gadget iframe {
@@ -4063,4 +4076,7 @@ table.gadget iframe {
 }
 .dl-horizontal dd {
   margin-left: 46%;
+}
+a img:hover {
+  text-decoration: none;
 }
