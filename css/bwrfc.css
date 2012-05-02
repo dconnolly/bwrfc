@@ -4080,3 +4080,7 @@ table.gadget iframe {
 a img:hover {
   text-decoration: none;
 }
+
+.foobarbaz {
+  color: #DEADBEEF;
+}
