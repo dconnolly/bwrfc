@@ -1,4 +1,3 @@
-
     <?php roots_footer_before(); ?>
     
     <footer id="content-info" class="<?php echo WRAP_CLASSES; ?>" role="contentinfo">
@@ -25,6 +24,13 @@
 
   <?php wp_footer(); ?>
   <?php roots_footer(); ?>
-
+  <!-- Start of HubSpot Logging Code  -->
+  <script type="text/javascript" language="javascript">
+      var hs_portalid=166270; 
+      var hs_salog_version = "2.00";
+      var hs_ppa = "bwrfc.app12.hubspot.com";
+      document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <!-- End of HubSpot Logging Code -->
 </body>
 </html>
