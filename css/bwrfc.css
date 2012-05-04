@@ -107,17 +107,19 @@ textarea {
 }
 body {
   min-height: 100%;
-  min-width: 100%;
+  margin: 0;
   background-size: 100% auto;
   padding-top: 0;
   font: 62.5%/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #CCCCCC;
+  position: relative;
 
-  background-color: #000010 !important;
+  background-color: #242a3d;
   background-image: -moz-linear-gradient(top, #000010, #242a3d);
   background-image: -ms-linear-gradient(top, #000010, #242a3d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000010), to(#242a3d));
   background-image: -webkit-linear-gradient(top, #000010, #242a3d);
   background-image: -o-linear-gradient(top, #000010, #242a3d);
   background-image: linear-gradient(top, #000010, #242a3d);
