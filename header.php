@@ -58,9 +58,9 @@
 <body <?php body_class(roots_body_class()); ?>>
 
   <!--[if lt IE 9]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
+  <div class="<?php echo WRAP_CLASSES; ?>">
   <?php roots_header_before(); ?>
-  <header id="banner" class="container" role="banner">
+  <header id="banner" role="banner">
     <?php roots_header_inside(); ?>
     <div id="follow-me">
       <a href="http://www.facebook.com/bostonwomensrfc">
@@ -99,7 +99,6 @@
         </div>
       </div>
     </div>
-  </div>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <div id="slides" class="primary-image">
       <div id="support" class="slide">
@@ -138,4 +137,4 @@
   <?php roots_header_after(); ?>
 
   <?php roots_wrap_before(); ?>
-  <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
+  <!-- <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document"> -->

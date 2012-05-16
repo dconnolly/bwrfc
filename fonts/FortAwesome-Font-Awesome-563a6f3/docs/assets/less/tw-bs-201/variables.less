@@ -1,46 +1,43 @@
 // Variables.less
 // Variables to customize the look and feel of Bootstrap
-// Swatch: Cyborg
 // -----------------------------------------------------
 
-// CUSTOM VALUES
-// --------------------------------------------------
 
 
 // GLOBAL VALUES
 // --------------------------------------------------
 
 // Links
-@linkColor:             @blue;
-@linkColorHover:        @white;
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
 
 // Grays
 @black:                 #000;
-@grayDarker:            #020202;
-@grayDark:              #282828;
-@gray:                  #999;
-@grayLight:             #ADAFAE;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
 
 // Accent colors
-@blue:                  #33B5E5;
-@blueDark:              #0099CC;
-@green:                 #669900;
-@red:                   #CC0000;
-@yellow:                #ECBB13;
-@orange:                #FF8800;
-@pink:                  #FF4444;
-@purple:                #9933CC;
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
 
 // Typography
 @baseFontSize:          13px;
-@baseFontFamily:        'Droid Sans', sans-serif;
+@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 @baseLineHeight:        18px;
-@textColor:             @gray;
+@textColor:             @grayDark;
 
 // Buttons
-@primaryButtonBackground:    @blue;
+@primaryButtonBackground:    @linkColor;
 
 
 
@@ -50,27 +47,27 @@
 // Z-index master list
 // Used for a bird's eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
-@zindexDropdown:        1000;
-@zindexPopover:         1010;
-@zindexTooltip:         1020;
-@zindexFixedNavbar:     1030;
-@zindexModalBackdrop:   1040;
-@zindexModal:           1050;
+@zindexDropdown:          1000;
+@zindexPopover:           1010;
+@zindexTooltip:           1020;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;
 
 // Sprite icons path
 @iconSpritePath:          "../img/glyphicons-halflings.png";
 @iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
 
 // Input placeholder text color
-@placeholderText:       @grayLight;
+@placeholderText:         @grayLight;
 
 // Hr border color
-@hrBorder:                @grayDark;
+@hrBorder:                @grayLighter;
 
 // Navbar
 @navbarHeight:                    40px;
 @navbarBackground:                @grayDarker;
-@navbarBackgroundHighlight:       @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
 @navbarLinkBackgroundHover:       transparent;
 
 @navbarText:                      @grayLight;
@@ -78,20 +75,20 @@
 @navbarLinkColorHover:            @white;
 
 // Form states and alerts
-@warningText:             darken(#c09853, 10%);
-@warningBackground:       @grayLighter;
-@warningBorder:           transparent;
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
 @errorText:               #b94a48;
-@errorBackground:         @grayLighter;
+@errorBackground:         #f2dede;
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
 @successText:             #468847;
-@successBackground:       @grayLighter;
+@successBackground:       #dff0d8;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                @blueDark;
-@infoBackground:          @grayLighter;
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
 

@@ -22,8 +22,8 @@
         </article>        
         <?php endwhile;?>
         <?php roots_loop_after(); ?>
-        <nav id="post-nav" class="pager">
-          <a href="/club/news-and-events">More</a>
+        <nav id="post-nav-front-page" class="pager">
+          <a href="/club/news-and-events">Read more →</a>
         </nav>
       </div><!-- /#main -->
     <?php roots_main_after(); ?>
