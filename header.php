@@ -25,34 +25,11 @@
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/libs/slides.js"></script>
-  <script>
-    $(function(){
-      $("#slides").slides({
-            responsive: true,
-            play: 5000,
-            playInterval: 5000,
-            navigation: false,
-            pagination: false,
-            startAtSlide: 5,
-            preload: {
-                       active: true
-            },
-            effects: {
-                       play: "fade"
-            },
-            fade: {
-                    interval: 1000
-            }
-      }).slides("play");
-    });
-    
-  </script>
   <?php } ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
-
   <?php roots_head(); ?>  
   <?php wp_head(); ?>
-
+  
 </head>
 
 <body <?php body_class(roots_body_class()); ?>>

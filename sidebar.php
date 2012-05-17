@@ -9,7 +9,7 @@
        </a>
     </div>
     <div class="module-footer">
-        <h6><a href="/team/new-players">GET IN TOUCH</a></h6>
+        <h6><a href="/team/new-players"><i class="icon-play"></i>Get in touch</a></h6>
     </div>
 </div>
 
@@ -24,7 +24,7 @@
        </a>
     </div>
     <div class="module-footer">
-        <h6><a href="/cape-cod-sevens">Prepare for battle</a></h6>
+        <h6><a href="/cape-cod-sevens"><i class="icon-play"></i>Prepare for battle</a></h6>
     </div>
 </div>
 
