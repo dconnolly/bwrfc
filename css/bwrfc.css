@@ -3981,7 +3981,9 @@ div.slide {
   bottom: 15%;
 }
 h1 span {
-   font-size: 42px;
+  font-size: 42px;
+}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .module-body div {
    color: white;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
@@ -4101,7 +4103,38 @@ table.gadget iframe {
 a img:hover {
   text-decoration: none;
 }
-
+.module {
+  margin-bottom: 2.5%;
+  border-bottom: 0!important;
+  background: #2D3A48;
+  padding: 0!important;
+  
+}
+.module .module-header {
+  /* background-color: rgba(255, 255, 255, 0.08); */
+  border-bottom: 3px solid #C00;
+}
+.module .module-header > * {
+  padding: 15px 0 0 10px;
+}
+.module .module-body {
+  position: relative;
+}
+.module .module-body div {
+  position: absolute;
+  bottom: 0%;
+}
+.module .module-footer {
+  clear: both;
+  border-top: 3px solid #C00;
+  padding: 5px 0;
+}
+.module .module-footer > * {
+  padding: 2px 0 3px 13px;
+}
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+  text-decoration: none;
+}
 
 /*!
  * Based on Bootstrap Responsive v2.0.0
@@ -4184,10 +4217,10 @@ a img:hover {
         font-size: 25px;
     }
     h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
     h3 {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 @media (min-width: 490px) and (max-width: 714px) {
