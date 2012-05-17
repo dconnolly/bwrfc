@@ -40,22 +40,16 @@
   <header id="banner" role="banner">
     <?php roots_header_inside(); ?>
     <div id="follow-me">
-      <a href="http://www.facebook.com/bostonwomensrfc">
-        <img class="icon png grey" alt="Follow bostonwomensrfc on Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png">
-        <img class="icon png white" alt="Follow bostonwomensrfc on Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook_white.png">
-      </a>
-      <a href="http://www.twitter.com/bostonwomensrfc">
-        <img class="icon png grey" alt="Follow @bostonwomensrfc on Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.png">
-        <img class="icon png white" alt="Follow @bostonwomensrfc on Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter_white.png">
-      </a>
-      <a href="/feed">
-        <img class="icon png grey" alt="Follow us via rss" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rss.png">
-        <img class="icon png white" alt="Follow us via rss" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rss_white.png">
-      </a>
+      <h3>
+        <a href="http://www.twitter.com/bostonwomensrfc">t</a>
+        <a href="http://www.facebook.com/bostonwomensrfc">f</a>
+        <a href="/feed">r</a>
+      </h3>
     </div>
     <h1 id="header-logo">
       <a href="/" class="logo"><?php bloginfo('name'); ?> <small>est. 1976</small></a>
     </h1>
+    
     <div class="navbar">
       <div class="navbar-inner">
         <div class="<?php echo WRAP_CLASSES; ?>">

@@ -7,7 +7,8 @@
  * Tracked at git@github.com:dconnolly/bwrfc.git
  */
 @import url('../fonts/EuropaGroNr2SHOP-Ult/EuropaGroNr2SHOP-Ult.css');
-@import url('../fonts/FortAwesome-Font-Awesome/css/font-awesome.css');
+/* @import url('../fonts/FortAwesome-Font-Awesome/css/font-awesome.css'); */
+@import url('../fonts/WebSymbols/stylesheet.css');
 
 article,
 aside,
@@ -144,7 +145,7 @@ a {
 }
 a:hover {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .row {
   margin-left: -20px;
@@ -4063,22 +4064,14 @@ footer .copy {
 }
 header div#follow-me{
    float: right;   
-   /* background-color: rgba(255, 255, 255, 0.1); */
-   padding-bottom: 2%;
    padding-top: 0.85%;
 }
-#follow-me img.white {
-  display: none;
+header #follow-me a {
+  color: #ADAFAE;
+  font-family: 'WebSymbolsRegular';
 }
-#follow-me a:hover img.white {
-  display: inline-block;   
-}
-#follow-me a:hover img.grey {
-  display: none;   
-}
-header div#follow-me img.icon {
-  width: 20px;
-  height: 20px;
+header #follow-me a:hover {
+  color: white;
 }
 /* .svg img.png, .no-svg img.svg { */
 /*   display: none!important; */
@@ -4231,6 +4224,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     h1#header-logo, h1 span {
         font-size: 30px;
     }
+    
 }
 @media (max-width:600px) {
     #content div#main {
@@ -4241,10 +4235,6 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     aside#sidebar {
         float: none;
         width: 100%;
-    }
-    header div#follow-me img.icon {
-        width: 15px;
-        height: 15px;
     }
 }
 @media (max-width:768px){
