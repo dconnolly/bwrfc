@@ -25,60 +25,31 @@
   <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/libs/slides.js"></script>
-  <script>
-    $(function(){
-      $("#slides").slides({
-            responsive: true,
-            play: 5000,
-            playInterval: 5000,
-            navigation: false,
-            pagination: false,
-            startAtSlide: 5,
-            preload: {
-                       active: true
-            },
-            effects: {
-                       play: "fade"
-            },
-            fade: {
-                    interval: 1000
-            }
-      }).slides("play");
-    });
-    
-  </script>
   <?php } ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
-
   <?php roots_head(); ?>  
   <?php wp_head(); ?>
-
+  
 </head>
 
 <body <?php body_class(roots_body_class()); ?>>
 
   <!--[if lt IE 9]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
+  <div class="<?php echo WRAP_CLASSES; ?>">
   <?php roots_header_before(); ?>
-  <header id="banner" class="container" role="banner">
+  <header id="banner" role="banner">
     <?php roots_header_inside(); ?>
     <div id="follow-me">
-      <a href="http://www.facebook.com/bostonwomensrfc">
-        <img class="icon png grey" alt="Follow bostonwomensrfc on Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png">
-        <img class="icon png white" alt="Follow bostonwomensrfc on Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook_white.png">
-      </a>
-      <a href="http://www.twitter.com/bostonwomensrfc">
-        <img class="icon png grey" alt="Follow @bostonwomensrfc on Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter.png">
-        <img class="icon png white" alt="Follow @bostonwomensrfc on Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/img/twitter_white.png">
-      </a>
-      <a href="/feed">
-        <img class="icon png grey" alt="Follow us via rss" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rss.png">
-        <img class="icon png white" alt="Follow us via rss" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rss_white.png">
-      </a>
+      <h3>
+        <a href="http://www.twitter.com/bostonwomensrfc">t</a>
+        <a href="http://www.facebook.com/bostonwomensrfc">f</a>
+        <a href="/feed">r</a>
+      </h3>
     </div>
     <h1 id="header-logo">
       <a href="/" class="logo"><?php bloginfo('name'); ?> <small>est. 1976</small></a>
     </h1>
+    
     <div class="navbar">
       <div class="navbar-inner">
         <div class="<?php echo WRAP_CLASSES; ?>">
@@ -99,7 +70,6 @@
         </div>
       </div>
     </div>
-  </div>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <div id="slides" class="primary-image">
       <div id="support" class="slide">
@@ -138,4 +108,4 @@
   <?php roots_header_after(); ?>
 
   <?php roots_wrap_before(); ?>
-  <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
+  <!-- <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document"> -->
