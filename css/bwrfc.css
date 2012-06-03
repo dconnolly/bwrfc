@@ -144,7 +144,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
 .row {
@@ -286,7 +286,8 @@ a:hover {
   width: 99.99999998999999%;
 }
 .container {
-  /* width: 940px; */
+  width: 90%;
+  max-width: 980px;
   margin-left: auto;
   margin-right: auto;
   *zoom: 1;
@@ -3485,7 +3486,7 @@ html {
 .navbar .search-query::-webkit-input-placeholder, .navbar .search-query:focus::-webkit-input-placeholder, .navbar .search-query.focused::-webkit-input-placeholder {
   color: #999999;
 }
-.navbar .nav .active > a, .navbar .nav li > a:hover, .navbar .brand:hover {
+.navbar .nav .active > a, .navbar .nav li > a:hover, .navbar .brand:hover, .navbar .nav .current-menu-ancestor > a{
   border-bottom: 3px solid #CC0000;
   padding: 13px 10px 5px;
 }
@@ -3926,6 +3927,9 @@ h1#header-logo {
   font-size: 43px;
   display: inline;
 }
+h1#header-logo a:hover {
+  color: white;
+}
 .navbar-inner {
   background: transparent;
 }
@@ -3949,7 +3953,7 @@ hr {
   border-top: none;
 }
 
-header a {
+header a, header a.logo {
   color: #EEE;
 }
 
@@ -4035,22 +4039,30 @@ footer#content-info {
   vertical-align: middle; 
   padding-top: 0px;
 }
+footer .footer-sponsors {
+  text-align: center;
+  margin: 0;
+}
+footer .footer-sponsors li {
+  display: inline;
+  margin-bottom: 10px;
+}
 #fenway-logo {
-  /* max-height: 50px; */
-  max-width: 55px;
-  /* width: 6%; */
-  height: 100%;
+  /* /\* max-height: 50px; *\/ */
+  /* max-width: 55px; */
+  /* /\* width: 6%; *\/ */
+  /* height: 100%; */
   margin: 0 5%;
 }
 #oneills-logo {
-  height: 35%;
-  width: 13%;
-  max-height: 17px;
+  /* height: 35%; */
+  /* width: 13%; */
+  /* max-height: 17px; */
 }
 #banshee-logo {
-  height: 50%;
-  max-height: 25px;
-  width: 14%;
+  /* height: 50%; */
+  /* max-height: 25px; */
+  /* width: 14%; */
 }
 footer h6{
   display: inline;
@@ -4062,13 +4074,14 @@ footer .photo-credits {
 footer .copy {
   float: right;
 }
-header div#follow-me{
-   float: right;   
-   padding-top: 0.85%;
+header #follow-me{
+   float: right
+   /* padding-top: 0.85%; */
 }
 header #follow-me a {
   color: #ADAFAE;
   font-family: 'WebSymbolsRegular';
+  vertical-align: middle;
 }
 header #follow-me a:hover {
   color: white;
@@ -4207,11 +4220,18 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
       font-size: 7px;
     }
     
+    footer .footer-sponsors li {
+        display: block;
+    }
+    
 }
 
 @media (max-width: 490px) {
     h1#header-logo, h1 span, h1{
         font-size: 25px;
+    }
+    h1 small {
+      font-size: 10px;
     }
     h2 {
         font-size: 20px;
@@ -4223,6 +4243,9 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 @media (min-width: 490px) and (max-width: 714px) {
     h1#header-logo, h1 span {
         font-size: 30px;
+    }
+    h1 small {
+      font-size: 15px;
     }
     
 }
@@ -4303,7 +4326,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     .span11{
         width:662px;
     } 
-    .span12,.container{
+    .span12 {
         width:724px;
     } 
     .offset1{
@@ -4430,7 +4453,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
         width:714px;
     }
 }
-@media (max-width:980px){
+@media (max-width:900px){
     body{
         padding-top:0;
     } 
@@ -4523,7 +4546,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
         padding-right:10px;
     } 
     .btn-navbar{
-        display:block;
+        display: block;
     } 
     .nav-collapse{
         overflow:hidden;

@@ -39,15 +39,15 @@
   <?php roots_header_before(); ?>
   <header id="banner" role="banner">
     <?php roots_header_inside(); ?>
-    <div id="follow-me">
-      <h3>
+    
+    <h1 id="header-logo">
+      <a href="/" class="logo"><?php bloginfo('name'); ?></a> 
+      <small>est. 1976</small>
+      <small id="follow-me">
         <a href="http://www.twitter.com/bostonwomensrfc">t</a>
         <a href="http://www.facebook.com/bostonwomensrfc">f</a>
         <a href="/feed">r</a>
-      </h3>
-    </div>
-    <h1 id="header-logo">
-      <a href="/" class="logo"><?php bloginfo('name'); ?> <small>est. 1976</small></a>
+      </small>
     </h1>
     
     <div class="navbar">

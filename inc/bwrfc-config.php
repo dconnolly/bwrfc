@@ -1,7 +1,7 @@
 <?php
 
 define('POST_EXCERPT_LENGTH',  40);
-define('BOOTSTRAP_RESPONSIVE', true);
+define('BOOTSTRAP_RESPONSIVE', false);
 define('WRAP_CLASSES',         'container');
 define('CONTAINER_CLASSES',    'row-fluid');
 define('MAIN_CLASSES',         'span7');
