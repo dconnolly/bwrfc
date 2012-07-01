@@ -44,9 +44,9 @@
       <a href="/" class="logo"><?php bloginfo('name'); ?></a> 
       <small>est. 1976</small>
       <small id="follow-me">
-        <a href="http://www.twitter.com/bostonwomensrfc">t</a>
-        <a href="http://www.facebook.com/bostonwomensrfc">f</a>
-        <a href="/feed">r</a>
+        <a href="http://www.facebook.com/bostonwomensrfc" data-icon=""></a>
+        <a href="http://www.twitter.com/bostonwomensrfc" data-icon=""></a>
+        <a href="/feed" data-icon=""></a>
       </small>
     </h1>
     
