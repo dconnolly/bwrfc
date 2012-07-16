@@ -51,24 +51,17 @@
     </h1>
     
     <div class="navbar">
-      <div class="navbar-inner">
-        <div class="<?php echo WRAP_CLASSES; ?>">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <nav id="nav-main" class="nav-collapse" role="navigation">
-            <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Navbar_Nav_Walker())); ?>
-            <form role="search" method="get" id="searchform" class="navbar-search form-search pull-right" action="<?php echo home_url('/'); ?>">
-              <label class="visuallyhidden" for="s">
-                <?php _e('Search for:', 'roots'); ?>
-              </label>
-              <input type="text" value="" name="s" id="s" class="search-query span2" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>">
-            </form>
-          </nav>
-        </div>
-      </div>
+      <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse" data-icon="&#xe156;">
+      </a>
+      <nav id="nav-main" class="nav-collapse" role="navigation">
+        <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Navbar_Nav_Walker())); ?>
+            <!-- <form role="search" method="get" id="searchform" class="navbar-search form-search pull-right" action="<?php echo home_url('/'); ?>"> -->
+            <!--   <label class="visuallyhidden" for="s"> -->
+            <!--     <?php _e('Search for:', 'roots'); ?> -->
+            <!--   </label> -->
+            <!--   <input type="text" value="" name="s" id="s" class="search-query span2" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>"> -->
+            <!-- </form> -->
+      </nav>
     </div>
   <?php if (!has_post_thumbnail() && !wp_title("", 0)) { ?>
   <div id="slides" class="primary-image">
@@ -95,6 +88,7 @@
   </div>
   <?php } else { ?>
   <div class="attachment-post-thumbnail primary-image">
+
     <?php if (has_post_thumbnail()) { ?>
     <?php the_post_thumbnail(); ?>
     <?php } else { ?>
@@ -103,6 +97,7 @@
     <?php if (wp_title("", 0)) { ?>
     <h1><span><?php wp_title("", true); ?></span></h1>
     <?php } ?>
+    </div>
     <?php } ?>
   </header>
   <?php roots_header_after(); ?>
