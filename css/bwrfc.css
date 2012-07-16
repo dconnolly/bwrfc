@@ -2555,7 +2555,7 @@ nav > ul.nav > li q{
   color: #CCC;
   border-left: 0;
   font-weight: bold;
-  padding: 13px 10px 8px;
+  padding: 13px 10px 5px;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -4186,9 +4186,8 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     .container {
         width: 300px;
     }
-
     #nav-main {
-        margin: 0 0 1.5em;
+        /* margin: 0 0 1.5em; */
         position: relative;
         overflow: hidden;
     }
@@ -4322,7 +4321,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     } 
     .navbar .nav{
         float:none;
-        margin:0 0 9px;
+        /* margin:0 0 9px; */
     } 
     .navbar .nav>li{
         float:none;
@@ -4403,6 +4402,9 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
         float: none;
         width: 100%;
     }
+    .navbar nav#nav-main {
+        width: 90%;
+    }
     .navbar-fixed-top{
         position:static;
         margin-bottom:18px;
@@ -4420,13 +4422,12 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     } 
     .navbar .nav{
         float:none;
-        margin:0 0 9px;
-    } 
+    }
     .navbar .nav>li{
         float:none;
     } 
     .navbar .nav>li>a{
-        margin-bottom:2px;
+        /* margin-bottom:2px; */
     } 
     .navbar .nav>.divider-vertical{
         display:none;
@@ -4497,6 +4498,9 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     .navbar .nav-collapse li.current-menu-ancestor > a
     {
         display: list-item;
+    }
+    .navbar .nav-collapse li.active a {
+        border-bottom: none;
     }
 }
 
