@@ -2364,34 +2364,24 @@ nav > ul.nav > li q{
 }
 .btn-navbar {
   font-weight: bolder;
-  /* height: 3em; */
   display: none;
   float: right;
-  padding: 7px 10px;
-  margin: 5px;
-  background-color: #020202;
-  background-image: -moz-linear-gradient(top, #020202, #020202);
-  background-image: -ms-linear-gradient(top, #020202, #020202);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#020202), to(#020202));
-  background-image: -webkit-linear-gradient(top, #020202, #020202);
-  background-image: -o-linear-gradient(top, #020202, #020202);
-  background-image: linear-gradient(top, #020202, #020202);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020202', endColorstr='#020202', GradientType=0);
-  border-color: #020202 #020202 #000000;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  padding: 0;
+  margin: 2% 0 0 0;
+  background-color: transparent;
+  background-image: none;
+  border-color: none;
+  box-shadow: none;
+  font-size: 20px;
 }
 .btn-navbar:hover,
 .btn-navbar:active,
 .btn-navbar.active,
 .btn-navbar.disabled,
 .btn-navbar[disabled] {
-  background-color: #020202;
+  background-color: transparent;
   color: white;
+  cursor: pointer;
 }
 .btn-navbar:active, .btn-navbar.active {
   background-color: #000000 \9;
@@ -4403,7 +4393,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
         width: 100%;
     }
     .navbar nav#nav-main {
-        width: 90%;
+        width: 85%;
     }
     .navbar-fixed-top{
         position:static;
@@ -4495,6 +4485,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     }
     .navbar .nav-collapse.in ul li, 
     .navbar .nav-collapse li.active,
+    .navbar .nav-collapse ul li:first-child a,
     .navbar .nav-collapse li.current-menu-ancestor > a
     {
         display: list-item;
