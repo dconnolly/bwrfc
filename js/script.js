@@ -4,8 +4,9 @@ jQuery(function() {
     $('ul.nav > li.dropdown > a').click(
         function(event) {
             event.preventDefault();
-            $("li.dropdown.open").removeClass('open');
-            $(this).parent().toggleClass('open');
+            $parentDropdown = $(this).parent();
+            $("li.dropdown.open").not($parentDropdown).removeClass('open');
+            $parentDropdown.toggleClass('open');
         }
     );
 
