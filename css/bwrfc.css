@@ -2548,6 +2548,7 @@ nav > ul.nav > li q{
   padding: 13px 10px 5px;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-bottom: 3px solid transparent;
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
