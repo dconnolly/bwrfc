@@ -1,7 +1,7 @@
 jQuery(function() {
 
     /* Hover over nav to trigger dropdown */
-    $('ul.nav > li.dropdown > a').click(
+    $('nav > ul.nav > li.dropdown').click(
         function(event) {
             event.preventDefault();
             $parentDropdown = $(this).parent();
@@ -9,6 +9,12 @@ jQuery(function() {
             $parentDropdown.toggleClass('open');
         }
     );
+    $('nav ul.dropdown').click(
+        function(event) {
+            event.stopPropagation();
+        }
+    );
+
 
     /* Activate slides.js on #slides if present. */
     var slidesPresent = $("#slides").length;
