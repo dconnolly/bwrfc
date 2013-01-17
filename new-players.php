@@ -20,6 +20,7 @@ get_header(); ?>
         </div>
       
         <div>       
+            <?php gravity_form('New Players', $display_title=false, $display_description=true, $display_inactive=false, $field_values=null, $ajax=true); ?>
         </div>
       <?php roots_sidebar_inside_after(); ?>
       </aside><!-- /#sidebar -->
