@@ -19,7 +19,7 @@ get_header(); ?>
           <h1> Contact Us!</h1>
         </div>
         <div>
-            [gravityform id="1" name="Contact Us" ajax="true"]
+            <?php gravity_form('Contact Us', $display_title=false, $display_description=true, $display_inactive=false, $field_values=null, $ajax=true); ?>
         </div>
         <?php roots_sidebar_inside_after(); ?>
       </aside><!-- /#sidebar -->
