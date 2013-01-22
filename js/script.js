@@ -3,7 +3,6 @@ jQuery(function() {
     /* Hover over nav to trigger dropdown */
     $('nav > ul.nav > li.dropdown').click(
         function(event) {
-            event.preventDefault();
             $parentDropdown = $(this).parent();
             $("li.dropdown.open").not($parentDropdown).removeClass('open');
             $parentDropdown.toggleClass('open');
@@ -14,7 +13,6 @@ jQuery(function() {
             event.stopPropagation();
         }
     );
-
 
     /* Activate slides.js on #slides if present. */
     var slidesPresent = $("#slides").length;
