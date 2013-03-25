@@ -18,7 +18,7 @@
         <h2>Cape Cod Sevens</h2>
     </div>
     <div class="module-body">
-       <div><h3>The battle of the ages begins July 21st</h3></div>
+       <div><h3>Disney dreams come alive on July 13th</h3></div>
        <a href="/cape-cod-sevens">
            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cape-cod-sevens-tutus.jpg" alt="Cape Cod Sevens, with tutus">
        </a>
