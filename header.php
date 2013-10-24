@@ -11,8 +11,8 @@
         single_post_title('', true);
     } else {
         bloginfo('description');
-    }                                      
-    ?>" />   
+    }
+    ?>" />
 
   <meta name="viewport" content="width=device-width">
 
@@ -27,9 +27,10 @@
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/libs/slides.js"></script>
   <?php } ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
-  <?php roots_head(); ?>  
+  <meta name="google-site-verification" content="mTPDQdO2pbxdJwSDeMgFrqw-h30nnKg_11IdFVxOCNo" />
+  <?php roots_head(); ?>
   <?php wp_head(); ?>
-  
+
 </head>
 
 <body <?php body_class(roots_body_class()); ?>>
@@ -39,9 +40,9 @@
   <?php roots_header_before(); ?>
   <header id="banner" role="banner">
     <?php roots_header_inside(); ?>
-    
+
     <h1 id="header-logo">
-      <a href="/" class="logo"><?php bloginfo('name'); ?></a> 
+      <a href="/" class="logo"><?php bloginfo('name'); ?></a>
       <small>est. 1976</small>
       <small id="follow-me">
         <a href="http://www.facebook.com/bostonwomensrfc" data-icon=""></a>
@@ -49,7 +50,7 @@
         <a href="/feed" data-icon=""></a>
       </small>
     </h1>
-    
+
     <div class="navbar">
       <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse" data-icon="&#xe156;">
       </a>
@@ -67,7 +68,7 @@
   <div id="slides" class="primary-image">
       <div id="support" class="slide">
         <img alt="Support BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/IMG_3924_960x300.jpg">
-        <h1><span>Support</span></h1>              
+        <h1><span>Support</span></h1>
       </div>
       <div id="score" class="slide">
         <img alt="Score BWRFC" src="<?php echo get_stylesheet_directory_uri(); ?>/img/KimVarney-30_960x300.jpg">
