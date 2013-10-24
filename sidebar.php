@@ -4,7 +4,7 @@
     </div>
     <div class="module-body">
        <div><h3>Nationally ranked D1 club rugby</h3></div>
-       <a href="/cape-cod-sevens">
+       <a href="/team/new-players">
 	   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/new-players-ruck-warmup.jpg" alt="Play for BWRFC, ruck with the best">
        </a>
     </div>
@@ -18,9 +18,9 @@
 	<h2>Cape Cod Sevens</h2>
     </div>
     <div class="module-body">
-       <div><h3>Disney dreams come alive on July 13th</h3></div>
+       <div><h3>Congrats to our 2013 champions</h3></div>
        <a href="/cape-cod-sevens">
-	   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CC7sLogo.jpg" alt="Cape Cod Sevens, now with more Disney">
+	   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cape-cod-sevens-tutus.jpg" alt="Cape Cod Sevens, now with more Disney">
        </a>
     </div>
     <div class="module-footer">
