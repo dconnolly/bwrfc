@@ -8,7 +8,7 @@
        </a>
     </div>
     <div class="module-footer">
-	<h6><a href="/team/new-players">▶ Join Us</a></h6>
+	      <h6><a href="/team/new-players">▶ Join Us</a></h6>
     </div>
 </div>
 
@@ -22,6 +22,6 @@
        </a>
     </div>
     <div class="module-footer">
-	<h6><a href="/cape-cod-sevens"><▶ Get ready</a></h6>
+	      <h6><a href="/cape-cod-sevens">▶ Get ready</a></h6>
     </div>
 </div>
